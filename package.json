@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "boot": "nodemon --exec babel-node app.js",
-    "start": "npm run build && node dist/app.js",
+    "start": "node dist/app.js",
     "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files && node dist/app.js"
   },
   "keywords": [],
