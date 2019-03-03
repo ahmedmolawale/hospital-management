@@ -3,10 +3,10 @@ const fs = require('fs');
 
 module.exports = {
   development: {
-    username: process.env.DB_USERNAME,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME,
-    host: process.env.DB_HOSTNAME,
+    username: 'bb0f4e2d71c8aa',
+    password: 'f0ecdbc1',
+    database: 'heroku_4976050155a9d46',
+    host: 'us-cdbr-iron-east-03.cleardb.net',
     dialect: 'mysql'
   },
   test: {
@@ -17,10 +17,10 @@ module.exports = {
     dialect: 'mysql'
   },
   production: {
-    username: process.env.DB_USERNAME,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME,
-    host: process.env.DB_HOSTNAME,
+    username: 'bb0f4e2d71c8aa',
+    password: 'f0ecdbc1',
+    database: 'heroku_4976050155a9d46',
+    host: 'us-cdbr-iron-east-03.cleardb.net',
     dialect: 'mysql'
   }
 };

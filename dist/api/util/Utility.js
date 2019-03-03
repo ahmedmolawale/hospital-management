@@ -18,15 +18,15 @@ var smtpTransport = exports.smtpTransport = _nodemailer2.default.createTransport
     port: 465, // Port
     secure: true, // this is true as port is 465
     auth: {
-        user: process.env.EMAIL_USERNAME,
-        pass: process.env.EMAIL_PASSWORD
+        user: 'ogundareakafayat@gmail.com',
+        pass: 'december1203*'
     }
 });
 
 var sendEmail = exports.sendEmail = function sendEmail(subject, message, email) {
     // setup email data with unicode symbols
     var mailOptions = {
-        from: process.env.EMAIL_SENDER, // sender address
+        from: 'ogundareakafayat@gmail.com', // sender address
         to: email, // list of receivers
         subject: subject, // Subject line
         text: message // plain text body
