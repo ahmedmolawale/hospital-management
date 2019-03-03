@@ -1,7 +1,5 @@
 'use strict';
 
-require('dotenv/config');
-
 var _express = require('express');
 
 var _express2 = _interopRequireDefault(_express);
@@ -43,6 +41,7 @@ var _LabAttendantResource2 = _interopRequireDefault(_LabAttendantResource);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //Resource
+// import 'dotenv/config';
 var app = (0, _express2.default)();
 
 app.use((0, _bodyParser.json)());
