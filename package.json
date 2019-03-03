@@ -5,18 +5,22 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --exec babel-node app.js",
-    "boot": "nodemon app.js --exec babel-node --presets babel-preset-env"
+    "boot": "nodemon --exec babel-node app.js",
+    "start": "npm run build && node dist/app.js",
+    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files && node dist/app.js"
   },
   "keywords": [],
   "author": "Olawale <ahmedmolawale@gmail.com> (https://ahmedmolawale.github.io)",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.3.3",
-    "@babel/node": "^7.2.2",
-    "@babel/preset-env": "^7.3.1",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "chai": "^4.2.0"
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.2.0",
+    "rimraf": "^2.6.2"
   },
   "dependencies": {
     "bcrypt": "^2.0.0",
