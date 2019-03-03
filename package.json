@@ -1,0 +1,37 @@
+{
+  "name": "health-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node app.js",
+    "boot": "nodemon app.js --exec babel-node --presets babel-preset-env"
+  },
+  "keywords": [],
+  "author": "Olawale <ahmedmolawale@gmail.com> (https://ahmedmolawale.github.io)",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.2.0"
+  },
+  "dependencies": {
+    "bcrypt": "^2.0.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-validation": "^1.0.2",
+    "joi": "^14.3.1",
+    "jshint": "^2.10.1",
+    "morgan": "^1.9.1",
+    "mysql2": "^1.6.5",
+    "nodemailer": "^5.1.1",
+    "nodemon": "^1.18.10",
+    "sequelize": "^4.42.0",
+    "sequelize-cli": "^5.4.0"
+  }
+}
