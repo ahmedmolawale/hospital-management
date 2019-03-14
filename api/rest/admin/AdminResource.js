@@ -10,7 +10,7 @@ import AdminService from '../../service/AdminService';
 
 const router = Router();
 
-router.post('/admin/login', validate(login), (request, response, next) => {
+router.post('/admin/login', (request, response, next) => {
     AdminService.authenticate(request)
         .then(result => {
             response.status(200);
@@ -19,7 +19,7 @@ router.post('/admin/login', validate(login), (request, response, next) => {
         }).catch(err => next(err));
 });
 
-router.post('/admin/create', validate(admin), (request, response, next) => {
+router.post('/admin/create', (request, response, next) => {
     AdminService.createAdmin(request)
         .then(result => {
             response.status(201);
